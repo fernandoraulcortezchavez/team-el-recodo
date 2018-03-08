@@ -10,12 +10,10 @@ double temperatura;
 
 
 void setup() {
-  
-lcd.begin(16, 2);
 
+lcd.begin(16, 2);
 pinMode(sensor, INPUT);
 pinMode(motor, OUTPUT);
-analogReference(INTERNAL);
 Serial.begin(9600);
 
 }
@@ -44,7 +42,8 @@ void loop() {
   else {
     velocidad = 0;
   }
-  lcd.clear();
+
+    lcd.clear();
   lcd.print("Temperatura:");
   lcd.setCursor(0,2);
   lcd.print(temperatura);

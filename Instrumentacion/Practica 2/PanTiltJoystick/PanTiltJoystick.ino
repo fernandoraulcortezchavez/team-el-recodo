@@ -1,5 +1,5 @@
 #include <Servo.h>
-//comentario
+
 Servo H;
 Servo V;
 int X = A0; //Lectura de Joystick
